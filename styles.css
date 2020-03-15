@@ -1,0 +1,33 @@
+@import "./color.css";
+
+.body__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  margin: 50px 0;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.controls__colors .controls__color:not(last-child) {
+  margin-right: 5px;
+}
