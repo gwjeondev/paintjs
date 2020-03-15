@@ -1,22 +1,57 @@
 @import "./color.css";
 
+* {
+  box-sizing: border-box;
+}
 .body__container {
   width: 100%;
+  height: 100vh;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .canvas {
-  margin: 50px 0;
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   background-color: #fff;
   border-radius: 30px;
+  margin-bottom: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.controls .controls__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.controls .controls__range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  all: unset;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.controls button:active {
+  transform: scale(0.9);
+}
+.controls button:not(:last-child) {
+  margin-right: 10px;
+}
 .controls .controls__colors {
   display: flex;
 }
@@ -29,5 +64,5 @@
 }
 
 .controls__colors .controls__color:not(last-child) {
-  margin-right: 5px;
+  margin-right: 3px;
 }
