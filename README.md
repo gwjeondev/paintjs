@@ -1,7 +1,7 @@
 # paintjs
 
 그림판 만들기
-https://won-developer.github.io/paintjs/
+https://gwjeondev.github.io/paintjs/
 
 ---
 
